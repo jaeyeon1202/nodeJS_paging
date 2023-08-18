@@ -36,7 +36,7 @@ const pageRead = {
     },
 
     content : async (num) =>{
-        pageUpdate.upHit(num); //페이지번호를 증가시킴
+        pageUpdate.upHit(num); //조회수 증가시킴
         const data = await dao.daoRead.content(num);
         return data.rows[0];
     },
